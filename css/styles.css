@@ -3,18 +3,57 @@
   --bg-cl: #FFFFFF;
   --secondary-font: font-family: 'Raleway', sans-serif;
   --main-font: font-family: 'Roboto', sans-serif;
+  --hover-cl: #2196F3;
+  --main-font-cl: #212121;
+  --secondary-font-cl: #757575;
+
 }
 
 .page{
     background-color: var(--bg-cl);
-    font-family: var(--main-font)
+    font-family: 'Roboto'
 }
 
-.logo{
+.top{
+    
+}
+
+.top-logo{
+    text-decoration: none;
  font-family: 'Raleway';
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
 line-height: 31px;
 letter-spacing: 0.03em;
+color: #000;
 }
+
+.top-logo span{
+    color: var(--hover-cl)
+}
+
+.nav-item{
+    list-style: none;
+}
+
+
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active{
+    color: var(--hover-cl)
+}
+
+
+
+.nav-link{
+text-decoration: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #212121;
+text-decoration: none;}
