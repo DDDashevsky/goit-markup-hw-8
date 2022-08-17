@@ -1,0 +1,20 @@
+:root {
+  --main-cl: #2F303A;
+  --bg-cl: #FFFFFF;
+  --secondary-font: font-family: 'Raleway', sans-serif;
+  --main-font: font-family: 'Roboto', sans-serif;
+}
+
+.page{
+    background-color: var(--bg-cl);
+    font-family: var(--main-font)
+}
+
+.logo{
+ font-family: 'Raleway';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+}
