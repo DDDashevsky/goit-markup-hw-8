@@ -10,7 +10,7 @@
 }
 
 .page{
-    background-color: --bg-cl
+    background-color: var(--bg-cl);
     font-family: var(--main-font)
 }
 
