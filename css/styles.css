@@ -1,8 +1,8 @@
 :root {
   --main-cl: #2F303A;
   --bg-cl: #FFFFFF;
-  --secondary-font: font-family: 'Raleway', sans-serif;
-  --main-font: font-family: 'Roboto', sans-serif;
+  --secondary-font:'Raleway', sans-serif;
+  --main-font:'Roboto', sans-serif;
   --hover-cl: #2196F3;
   --main-font-cl: #212121;
   --secondary-font-cl: #757575;
@@ -11,7 +11,7 @@
 
 .page{
     background-color: var(--bg-cl);
-    font-family: var(--main-font)
+    font-family: var(--main-font);
 }
 
 .top{
@@ -20,7 +20,7 @@
 
 .top-logo{
     text-decoration: none;
- font-family: 'Raleway';
+ font-family: var(--secondary-font);
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
