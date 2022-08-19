@@ -24,7 +24,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: calc(31/26);
   letter-spacing: 0.03em;
   color: var(--logo-black);
 }
@@ -36,6 +36,11 @@
 .list {
   list-style: none;
 }
+
+.nav-list .link.current{
+    color: var(--hover-cl);
+}
+
 
 .nav-list a:hover,
 .nav-list a:focus {
@@ -98,6 +103,20 @@
   color: var(--txt-wite);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .features-list h3 {
   font-weight: 700;
   font-size: 14px;
@@ -155,3 +174,83 @@
   letter-spacing: 0.03em;
   color: var(--secondary-font-cl);
 }
+
+.bottom{
+  background-color: var(--main-cl);
+}
+
+.bottom-logo{
+  font-family: var(--secondary-font);
+  text-decoration: none;
+font-weight: 700;
+font-size: 26px;
+line-height: calc(31/26);
+letter-spacing: 0.03em;
+color: var(--txt-wite);
+}
+
+.bottom-logo span{
+  color: var(--hover-cl); 
+}
+
+.bot-contacts-list{
+font-weight: 400;
+font-size: 14px;
+line-height: calc(24/14);
+letter-spacing: 0.03em;
+}
+
+.bot-contacts-address{
+  text-decoration: none;
+  font-style: normal;
+  color: var(--txt-wite);
+}
+
+.bot-contacts-address:hover{ color: var(--hover-cl);}
+
+.bot-contacts-item{
+  text-decoration: none;
+  font-style: normal;
+  color: var(--faded-secondary-font-cl);
+}
+
+.bot-contacts-item:hover{ color: var(--hover-cl);}
+
+/* Portfolio */
+
+.filter button{
+  background-color: var(--filter-button-cl);
+  cursor: pointer;
+  font-family: var(--main-font);
+  font-weight: 500;
+font-size: 16px;
+line-height: calc(26/16);
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-font-cl);
+}
+
+.filter button:hover{
+  background-color: var(--hover-cl);
+  color: var(--txt-wite);
+}
+
+
+.portfolio-list h2{
+  font-weight: 700;
+font-size: 18px;
+line-height: calc(36/18);
+letter-spacing: 0.06em;
+color: var(--main-font-cl);
+}
+
+.portfolio-list p{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(30/16);
+letter-spacing: 0.03em;
+color: var(--secondary-font-cl);
+}
+
