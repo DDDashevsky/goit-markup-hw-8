@@ -18,6 +18,8 @@
   font-family: var(--main-font);
 }
 
+/* header */
+
 .top-logo {
   text-decoration: none;
   font-family: var(--secondary-font);
@@ -50,7 +52,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-font-cl);
 }
@@ -58,7 +60,7 @@
 .top-contacts a {
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16/14);
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-font-cl);
@@ -69,7 +71,13 @@
   color: var(--hover-cl);
 }
 
+/* hero */
+
 .hero {
+  position: absolute;
+  width: 1600px;
+  height: 600px;
+
   background-color: var(--main-cl);
 }
 
@@ -84,6 +92,11 @@
 }
 
 .hero-button {
+  position: absolute;
+  width: 216px;
+  height: 50px;
+  left: 692px;
+  top: 430px;
   background-color: var(--hover-cl);
   cursor: pointer;
 }
@@ -96,9 +109,11 @@
 .hero-button-text {
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(30/16);
+  line-height: calc(30 / 16);
   color: var(--txt-wite);
 }
+
+/* features */
 
 .visually-hidden {
   position: absolute;
@@ -131,6 +146,8 @@
   color: var(--secondary-font-cl);
 }
 
+/* spec */
+
 .spec-header {
   font-weight: 700;
   font-size: 36px;
@@ -139,6 +156,8 @@
   letter-spacing: 0.03em;
   color: var(--main-font-cl);
 }
+
+/* team */
 
 .team {
   background-color: #f5f4fa;
@@ -170,6 +189,8 @@
   letter-spacing: 0.03em;
   color: var(--secondary-font-cl);
 }
+
+/* footer */
 
 .bottom {
   background-color: var(--main-cl);
@@ -254,4 +275,6 @@
   color: var(--secondary-font-cl);
 }
 
-.portfolio-list a{ text-decoration: none;}
+.portfolio-list a {
+  text-decoration: none;
+}
