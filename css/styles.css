@@ -170,6 +170,9 @@ img {
 .features-list {
   display: flex;
   flex-direction: row-reverse;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
 }
 
 .features-list li {
@@ -215,7 +218,14 @@ img {
 
 /* spec */
 
+.spec {
+  padding: 0 215px 94px 215px;
+  margin: 0;
+}
+
 .spec-header {
+  margin: 0 auto 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -224,9 +234,17 @@ img {
   color: var(--main-font-cl);
 }
 
+.spec-cont {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
 /* team */
 
 .team {
+  padding: 94px 215px;
   background-color: #f5f4fa;
 }
 
@@ -237,6 +255,13 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-cl);
+}
+
+.team-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .team-list h3 {
@@ -257,13 +282,31 @@ img {
   color: var(--secondary-font-cl);
 }
 
+.team-card {
+  width: 270px;
+  min-height: 368px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 /* footer */
 
 .bottom {
+  padding: 60px 215px;
   background-color: var(--main-cl);
 }
 
+.footer-cont {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
 .bottom-logo {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   text-decoration: none;
   font-weight: 700;
@@ -278,10 +321,18 @@ img {
 }
 
 .bot-contacts-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+
+.bot-contacts-list li:nth-child(-n + 2) {
+  margin-bottom: 9px;
 }
 
 .bot-contacts-address {
@@ -309,10 +360,11 @@ img {
 /* Portfolio */
 
 .filter {
+  margin: 0 0 34px 0;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 8px;
-  margin: 0 auto;
 }
 
 .filter button {
@@ -336,6 +388,11 @@ img {
 .filter button:focus {
   background-color: var(--hover-cl);
   color: var(--txt-wite);
+}
+
+.portfolio-page {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .portfolio-list h2 {
@@ -364,10 +421,12 @@ img {
   gap: 30px;
   padding: 0;
   margin: 0;
-  width: 1200px;
+  width: 1180px;
 }
 
 .portfolio-item {
+  border: 1px solid #eeeeee;
+  height: 404px;
   flex-basis: calc((100% - 30 * 2) / 3);
   border: 1px solid #eeeeee;
 }
