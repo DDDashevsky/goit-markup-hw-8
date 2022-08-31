@@ -27,16 +27,20 @@
   margin: 0 auto;
 }
 
-/* header */
-
-.nav-cont,
-.nav-list,
-.top-contacts,
-.navigation {
-  display: flex;
+.list {
+  list-style: none;
 }
 
+img {
+  display: block;
+}
+
+/* header */
+
 .top-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
   text-decoration: none;
   font-family: var(--secondary-font);
   font-style: normal;
@@ -51,8 +55,33 @@
   color: var(--hover-cl);
 }
 
-.list {
-  list-style: none;
+.nav-cont,
+.nav-list,
+.top-contacts,
+.navigation {
+  display: flex;
+}
+
+.nav-list {
+  width: 281px;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-cont {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-contacts {
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.mail {
+  margin-right: 50px;
 }
 
 .nav-list .link.current {
@@ -68,7 +97,8 @@
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: 80px;
+  /* line-height: calc(16 / 14); */
   letter-spacing: 0.02em;
   color: var(--main-font-cl);
 }
@@ -90,12 +120,15 @@
 /* hero */
 
 .hero {
-  width: 1600px;
-  height: 600px;
+  padding: 200px;
   background-color: var(--main-cl);
 }
 
 .hero-header {
+  width: 696px;
+  margin: auto;
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: calc(60 / 44);
@@ -106,13 +139,14 @@
 }
 
 .hero-button {
-  position: absolute;
+  display: block;
   width: 216px;
   min-height: 50px;
   margin: 0 auto;
   background-color: var(--hover-cl);
   cursor: pointer;
   border-radius: var(--btn-border);
+  border: none;
 }
 
 .hero-button:hover,
@@ -128,6 +162,25 @@
 }
 
 /* features */
+
+.features {
+  padding: 94px 0;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.features-list li {
+  width: 270;
+  margin: 0;
+}
+
+.features-list p {
+  margin: 0;
+  margin-top: 10px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -308,4 +361,13 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 30 * 2) / 3);
+  border: 1px solid #eeeeee;
 }
