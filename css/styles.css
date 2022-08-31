@@ -11,6 +11,7 @@
   --faded-secondary-font-cl: rgba(255, 255, 255, 0.6);
   --filter-button-cl: #f5f4fa;
   --txt-wite: #ffffff;
+  --portfolio-bd: #eeeeee;
   --btn-border: 4px;
 }
 
@@ -30,7 +31,8 @@
 
 .nav-cont,
 .nav-list,
-.top-contacts {
+.top-contacts,
+.navigation {
   display: flex;
 }
 
@@ -90,7 +92,6 @@
 .hero {
   width: 1600px;
   height: 600px;
-
   background-color: var(--main-cl);
 }
 
@@ -107,9 +108,8 @@
 .hero-button {
   position: absolute;
   width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;
+  min-height: 50px;
+  margin: 0 auto;
   background-color: var(--hover-cl);
   cursor: pointer;
   border-radius: var(--btn-border);
@@ -255,7 +255,19 @@
 
 /* Portfolio */
 
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 auto;
+}
+
 .filter button {
+  border: none;
+  border-radius: var(--btn-border);
+  min-height: 38px;
+  padding: 6px 22px;
+
   background-color: var(--filter-button-cl);
   cursor: pointer;
   font-family: inherit;
@@ -291,4 +303,9 @@
 
 .portfolio-list a {
   text-decoration: none;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
