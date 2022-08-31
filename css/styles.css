@@ -11,6 +11,7 @@
   --faded-secondary-font-cl: rgba(255, 255, 255, 0.6);
   --filter-button-cl: #f5f4fa;
   --txt-wite: #ffffff;
+  --btn-border: 4px;
 }
 
 .page {
@@ -18,7 +19,20 @@
   font-family: var(--main-font);
 }
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* header */
+
+.nav-cont,
+.nav-list,
+.top-contacts {
+  display: flex;
+}
 
 .top-logo {
   text-decoration: none;
@@ -74,7 +88,6 @@
 /* hero */
 
 .hero {
-  position: absolute;
   width: 1600px;
   height: 600px;
 
@@ -99,6 +112,7 @@
   top: 430px;
   background-color: var(--hover-cl);
   cursor: pointer;
+  border-radius: var(--btn-border);
 }
 
 .hero-button:hover,
