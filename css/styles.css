@@ -124,7 +124,7 @@ img {
 /* hero */
 
 .hero {
-  padding: 200px;
+  padding: 200px 0;
   background-color: var(--main-cl);
 }
 
@@ -173,25 +173,36 @@ img {
 
 .features-list {
   display: flex;
-  align-items: baseline;
   flex-direction: row-reverse;
+  flex-basis: calc(((100%-30px) * 3) / 4);
   gap: 30px;
   padding: 0;
   margin: 0;
 }
 
 .features-list-item {
-  flex-basis: calc(((100% - 30px) * 3) / 4);
   margin: 0;
 }
 
 .feature-header {
   margin: 0;
-  margin-bottom: 10;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-font-cl);
 }
 .feature {
   margin: 0;
-  margin-top: 10px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-cl);
 }
 
 .visually-hidden {
@@ -208,27 +219,10 @@ img {
   overflow: hidden;
 }
 
-.features-list h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-font-cl);
-}
-
-.features-list p {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--secondary-font-cl);
-}
-
 /* spec */
 
 .spec {
-  padding: 0 215px 94px 215px;
+  padding: 0 0 94px 0;
   margin: 0;
 }
 
@@ -250,10 +244,15 @@ img {
   padding: 0;
 }
 
+.spec-img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* team */
 
 .team {
-  padding: 94px 215px;
+  padding: 94px;
   background-color: #f5f4fa;
 }
 
@@ -267,13 +266,23 @@ img {
 }
 
 .team-list {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: space-between;
+  flex-basis: calc(((100%-30px) * 3) / 4);
+
+  padding: 0;
+  margin: 0;
 }
 
-.team-list h3 {
+.team-member-img {
+  width: 100%;
+  height: auto;
+}
+
+.team-member-name {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -282,7 +291,8 @@ img {
   color: var(--main-font-cl);
 }
 
-.team-list p {
+.team-member-role {
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -293,8 +303,10 @@ img {
 
 .team-card {
   width: 270px;
-  min-height: 368px;
+  height: 368px;
+  padding-bottom: 30px;
 
+  background-color: var(--bg-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
