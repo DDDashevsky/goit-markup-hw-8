@@ -37,6 +37,10 @@ img {
 
 /* header */
 
+.top {
+  border: 1px solid #ececec;
+}
+
 .top-logo {
   display: flex;
   align-items: center;
@@ -169,18 +173,23 @@ img {
 
 .features-list {
   display: flex;
+  align-items: baseline;
   flex-direction: row-reverse;
   gap: 30px;
   padding: 0;
   margin: 0;
 }
 
-.features-list li {
-  width: 270;
+.features-list-item {
+  flex-basis: calc(((100% - 30px) * 3) / 4);
   margin: 0;
 }
 
-.features-list p {
+.feature-header {
+  margin: 0;
+  margin-bottom: 10;
+}
+.feature {
   margin: 0;
   margin-top: 10px;
 }
@@ -294,7 +303,7 @@ img {
 /* footer */
 
 .bottom {
-  padding: 60px 215px;
+  padding: 60px 0;
   background-color: var(--main-cl);
 }
 
@@ -360,7 +369,7 @@ img {
 /* Portfolio */
 
 .filter {
-  margin: 0 0 34px 0;
+  margin: 0 0 50 px 0;
   padding: 0;
   display: flex;
   justify-content: center;
@@ -395,22 +404,6 @@ img {
   padding-bottom: 94px;
 }
 
-.portfolio-list h2 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  color: var(--main-font-cl);
-}
-
-.portfolio-list p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
-  color: var(--secondary-font-cl);
-}
-
 .portfolio-list a {
   text-decoration: none;
 }
@@ -421,12 +414,41 @@ img {
   gap: 30px;
   padding: 0;
   margin: 0;
-  width: 1180px;
 }
 
 .portfolio-item {
-  border: 1px solid #eeeeee;
   height: 404px;
-  flex-basis: calc((100% - 30 * 2) / 3);
-  border: 1px solid #eeeeee;
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.portfolio-img {
+}
+
+.card-caption {
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 110px;
+  align-self: baseline;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.card-caption-header {
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-font-cl);
+}
+
+.card-caption-type {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-cl);
 }
