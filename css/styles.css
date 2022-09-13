@@ -169,6 +169,20 @@ img {
   color: var(--hover-cl);
 }
 
+.mail:hover .contacts-icon,
+.mail:focus .contacts-icon {
+  fill: var(--hover-cl);
+}
+
+.tel:hover .contacts-icon,
+.tel:hover .contacts-icon {
+  fill: var(--hover-cl);
+}
+
+.contacts-icon {
+  fill: var(--secondary-font-cl);
+}
+
 /* hero */
 
 .hero {
@@ -435,16 +449,21 @@ img {
   margin: 0;
 }
 
+.client {
+  flex-basis: calc((100%-30px * 5) / 6);
+}
+
 .client-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-basis: calc((100%-30px * 5) / 6);
+  height: 92px;
   border: 1px solid var(--icon-cl);
   border-radius: 4px;
 }
 
 .logo-icon {
+  padding: 0;
   display: block;
   margin: 16px 32px;
   fill: var(--icon-cl);
