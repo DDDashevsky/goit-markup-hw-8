@@ -135,6 +135,7 @@ img {
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--hover-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-studio,
@@ -167,16 +168,19 @@ img {
 .top-contacts a:hover,
 .top-contacts a:focus {
   color: var(--hover-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover .contacts-icon,
 .mail:focus .contacts-icon {
   fill: var(--hover-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel:hover .contacts-icon,
 .tel:hover .contacts-icon {
   fill: var(--hover-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
@@ -230,6 +234,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-hover);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button-text {
@@ -345,6 +350,8 @@ img {
   padding: 0;
   left: 0;
   bottom: 0;
+  z-index: 10;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,6 +450,8 @@ img {
   height: 44px;
   background-color: var(--bg-cl);
   border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -495,11 +504,13 @@ img {
 .client-logo:hover,
 .client-logo:focus {
   border-color: var(--hover-cl);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .logo-icon,
 .client:focus .logo-icon {
   fill: var(--hover-cl);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -555,6 +566,7 @@ img {
 .bot-contacts-address:hover,
 .bot-contacts-adress:focus {
   color: var(--hover-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bot-contacts-item {
@@ -566,6 +578,7 @@ img {
 .bot-contacts-item:hover,
 .bot-contacts-item:focus {
   color: var(--hover-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bot-socials-header {
@@ -600,11 +613,13 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--hover-cl);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--bg-cl);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio */
@@ -642,6 +657,9 @@ img {
   color: var(--txt-wite);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-page {
