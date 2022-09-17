@@ -132,10 +132,13 @@ img {
   border-radius: 2px;
 }
 
+.nav-list a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--hover-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-studio,
@@ -163,28 +166,27 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-font-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-contacts a:hover,
 .top-contacts a:focus {
   color: var(--hover-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail:hover .contacts-icon,
 .mail:focus .contacts-icon {
   fill: var(--hover-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel:hover .contacts-icon,
 .tel:hover .contacts-icon {
   fill: var(--hover-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon {
   fill: var(--secondary-font-cl);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* hero */
@@ -229,12 +231,18 @@ img {
   cursor: pointer;
   border-radius: var(--btn-border);
   border: none;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  color: var(--txt-wite);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--button-hover);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button-text {
@@ -350,7 +358,6 @@ img {
   padding: 0;
   left: 0;
   bottom: 0;
-  z-index: 10;
 
   display: flex;
   align-items: center;
@@ -462,6 +469,7 @@ img {
 
 .social-icon {
   fill: var(--icon-cl);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* clients */
@@ -492,25 +500,24 @@ img {
   height: 92px;
   border: 1px solid var(--icon-cl);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-icon {
   padding: 0;
   display: block;
-  margin: 16px 32px;
   fill: var(--icon-cl);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-logo:hover,
 .client-logo:focus {
   border-color: var(--hover-cl);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client:hover .logo-icon,
 .client:focus .logo-icon {
   fill: var(--hover-cl);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* footer */
@@ -561,24 +568,24 @@ img {
   text-decoration: none;
   font-style: normal;
   color: var(--txt-wite);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bot-contacts-address:hover,
 .bot-contacts-adress:focus {
   color: var(--hover-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bot-contacts-item {
   text-decoration: none;
   font-style: normal;
   color: var(--faded-secondary-font-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bot-contacts-item:hover,
 .bot-contacts-item:focus {
   color: var(--hover-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .bot-socials-header {
@@ -613,13 +620,11 @@ img {
 .social-link:hover,
 .social-link:focus {
   background-color: var(--hover-cl);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
   fill: var(--bg-cl);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio */
@@ -649,6 +654,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-font-cl);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter button:hover,
@@ -657,9 +665,6 @@ img {
   color: var(--txt-wite);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-page {
@@ -704,13 +709,14 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 0 24px;
   transform: translateY(100%);
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -723,7 +729,6 @@ img {
   line-height: calc(28 / 18);
   letter-spacing: 0.03em;
   color: var(--bg-cl);
-  width: 322px;
 }
 
 .card-caption {
@@ -798,4 +803,6 @@ img {
   background-color: var(--bg-cl);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  cursor: pointer;
 }
