@@ -959,16 +959,12 @@ img {
   opacity: 1;
 }
 
-.form-checkbox + .checkbox-icon .icon-checked {
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .form-checkbox:checked + .checkbox-icon .icon-unchecked {
   opacity: 0;
 }
 
 .icon-checked {
+  opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
