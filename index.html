@@ -43,7 +43,7 @@
         <ul class="contacts header__contacts list">
           <li class="header__contacts__item contacts__item ">
             <a href="mailto:info@devstudio.com" class="contacts__link header__contacts__link mail">
-              <svg class="header__contacts__icon contacts__icon contacts-icon" width="16" height="12">
+              <svg class="header__contacts__icon contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               <span>info@devstudio.com</span></a
@@ -51,7 +51,7 @@
           </li>
           <li class="header__contacts__item contacts__item list">
             <a href="tel:+380961111111" class="contacts__link header__contacts__link tel">
-              <svg class="contacts__icon header__contacts__icon contacts-icon" width="10" height="16">
+              <svg class="contacts__icon header__contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
               </svg>
               <span>+38 096 111 11 11</span></a
@@ -446,50 +446,50 @@
       <section class="clients section" >
           <div class="clients__container container">
           <h2 class="clients__header client-header section-header">Постійні клієнти</h2>
-   <ul class="clients__list clients-list list">
-     <li class="clients__item client">
+   <ul class="clients__list list">
+     <li class="clients__item">
        <a class="clients__link client-logo link"> 
-          <svg class="clients__icon logo-icon" width="106" height="60">
+          <svg class="clients__icon" width="106" height="60">
         <use href="./images/icons.svg#logo1">    
       </use>
   </svg>
 </a>
 </li>
-       <li class="clients__item client">
-       <a class="clients__link client-logo link"> 
-          <svg class="clients__icon logo-icon" width="106" height="60">
+       <li class="clients__item">
+       <a class="clients__link link"> 
+          <svg class="clients__icon" width="106" height="60">
         <use href="./images/icons.svg#logo2">    
       </use>
   </svg>
 </a>
 </li>
-       <li class="clients__item client">
-       <a class="clients__link client-logo link"> 
-          <svg class="clients__icon logo-icon" width="106" height="60">
+       <li class="clients__item">
+       <a class="clients__link link"> 
+          <svg class="clients__icon" width="106" height="60">
         <use href="./images/icons.svg#logo3">    
       </use>
   </svg>
 </a>
 </li>
-      <li class="clients__item client">
-       <a class="clients__link client-logo link"> 
-          <svg class="clients__icon logo-icon" width="106" height="60">
+      <li class="clients__item">
+       <a class="clients__link link"> 
+          <svg class="clients__icon" width="106" height="60">
         <use href="./images/icons.svg#logo4">    
       </use>
   </svg>
 </a>
 </li>
-       <li class="clients__item client">
-       <a class="clients__link client-logo link"> 
-          <svg class="clients__icon logo-icon" width="106" height="60">
+       <li class="clients__item">
+       <a class="clients__link link"> 
+          <svg class="clients__icon" width="106" height="60">
         <use href="./images/icons.svg#logo5">    
       </use>
   </svg>
 </a>
 </li>
-       <li class="clients__item client">
-       <a class="clients__link client-logo link"> 
-          <svg class="clients__icon logo-icon" width="106" height="60">
+       <li class="clients__item">
+       <a class="clients__link link"> 
+          <svg class="clients__icon" width="106" height="60">
         <use href="./images/icons.svg#logo6">    
       </use>
   </svg>
@@ -499,28 +499,28 @@
       </section>
     </main>
 
-    <footer class="footer bottom">
-      <div class="footer__container container footer-cont">
-        <div class="footer__contacts contacts contacts-column">
-        <a href="./index.html" class="logo">Web<span class="logo--white">Studio</span></a>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div>
+        <a href="./index.html" class="logo logo--mrb">Web<span class="logo--white ">Studio</span></a>
         <address class="address">
-          <ul class="bot-contacts-list list">
-            <li>
+          <ul class="adress__list list">
+            <li class="adress__item">
               <a
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="bot-contacts-address"
+                class="adress__link adress__link--white"
                 >м. Київ, пр-т Лесі Українки,26</a
               >
             </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="bot-contacts-item"
+            <li class="adress__item">
+              <a href="mailto:info@devstudio.com" class="adress__link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+380961111111" class="bot-contacts-item"
+            <li class="adress__item">
+              <a href="tel:+380961111111" class="adress__link"
                 >+38 096 111 11 11</a
               >
             </li>
@@ -585,12 +585,12 @@
                 </ul>
                 </div>
       
-      <form class="footer-form">
-        <strong class="footer-form-title">Підпишіться на розсилку</strong>
-        <label class="footer-form-field">
-            <input class="footer-form-input" type="text" name="subscription" placeholder="E-mail" required>
+      <form class="sub-form">
+        <strong class="sub-form__title">Підпишіться на розсилку</strong>
+        <label class="sub-form__field">
+            <input class="sub-form__input footer-form-input" type="text" name="subscription" placeholder="E-mail" required>
           </label>
-          <button class="footer-form-btn" type="submit">Підписатися</button>
+          <button class="sub-form__btn" type="submit">Підписатися</button>
       </form>
       </div>
     </footer>
@@ -657,15 +657,15 @@
               ></textarea>
             </label>
           </div>
-          <label class="checkbox-field">
-            <input class="form-checkbox" type="checkbox"  name="policy-check"/>
-            <svg class="checkbox-icon" width="16" height="15">
+          <label class="checkbox">
+            <input class="checkbox__input" type="checkbox"  name="policy-check"/>
+            <svg class="checkbox__icon " width="16" height="15">
               <use class="icon-checked" href="./images/icons.svg#checked"></use>
               <use class="icon-unchecked" href="./images/icons.svg#unchecked"></use>
             </svg>
-            <span class="checkbox-text">
+            <span class="checkbox__text checkbox-text">
               Погоджуюся з розсилкою та приймаю
-              <a class="policy-link" href="">Умови договору</a></span
+              <a class="checkbox__link policy-link" href="">Умови договору</a></span
             >
           </label>
           <button class="submit-btn" type="submit">Відправити</button>
