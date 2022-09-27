@@ -596,62 +596,62 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal-btn" type="button" data-modal-close>
-          <svg class="cross-icon" width="11" height="11">
+        <button class="cross-btn" type="button" data-modal-close>
+          <svg class="cross-btn__icon" width="11" height="11">
             <use href="./images/icons.svg#cross-btn"></use>
           </svg>
         </button>
-        <strong class="request-form-title"
+        <strong class="request-form__title"
           >Залиште свої дані, ми вам передзвонимо</strong
         >
         <form class="request-form">
-          <div class="request-form-group" role="group">
-            <label class="form-field">
-              <span class="form-name">Ім'я</span>
-              <div class="input-cont">
+          <div class="request-form__group" role="group">
+            <label class="request-form__field">
+              <span class="request-form__name">Ім'я</span>
+              <div class="relative-container">
                 <input
-                  class="form-input"
+                  class="request-form__input"
                   type="text"
                   name="user-name"
                   required
                 />
-                <svg class="form-icon" width="15" height="15">
+                <svg class="request-form__icon" width="15" height="15">
                   <use href="./images/icons.svg#form-name"></use>
                 </svg>
               </div>
             </label>
-            <label class="form-field">
-              <span class="form-name">Телефон</span>
-              <div class="input-cont">
+            <label class="form__field">
+              <span class="request-form__name">Телефон</span>
+              <div class="relative-container">
                 <input
-                  class="form-input"
+                  class="request-form__input"
                   type="text"
                   name="user-phone"
                   required
                 />
-                <svg class="form-icon" width="15" height="15">
+                <svg class="request-form__icon" width="15" height="15">
                   <use href="./images/icons.svg#form-tel"></use>
                 </svg>
               </div>
             </label>
-            <label class="form-field">
-              <span class="form-name">Пошта</span>
-              <div class="input-cont">
+            <label class="form__field">
+              <span class="request-form__name">Пошта</span>
+              <div class="relative-container">
                 <input
-                  class="form-input"
+                  class="request-form__input"
                   type="text"
                   name="user-email"
                   required
                 />
-                <svg class="form-icon" width="15" height="15">
+                <svg class="request-form__icon" width="15" height="15">
                   <use href="./images/icons.svg#form-mail"></use>
                 </svg>
               </div>
             </label>
-            <label class="form-field">
-              <span class="form-name">Коментар</span>
+            <label class="form__field">
+              <span class="request-form__name">Коментар</span>
               <textarea
-                class="form-input"
+                class="request-form__input"
                 name="user-comment"
                 placeholder="Введіть текст"
               ></textarea>
