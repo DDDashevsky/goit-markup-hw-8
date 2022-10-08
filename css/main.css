@@ -225,6 +225,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -290,6 +291,7 @@ img {
 
 .logo--mrb {
   margin-bottom: 20px;
+  display: block;
 }
 
 .footer__logo {
@@ -323,7 +325,7 @@ img {
   border: none;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .menu-btn {
     display: none;
   }
@@ -422,6 +424,7 @@ img {
 }
 
 .menu__tel-text {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.1764705882;
   color: var(--hover-cl);
@@ -481,8 +484,8 @@ img {
   background-position: top center;
   background-size: cover;
   margin: 0 auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
@@ -501,6 +504,8 @@ img {
 }
 @media screen and (min-width: 769px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: url(../images/hero/hero_dt@1x.png);
   }
 }
@@ -517,6 +522,8 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -555,6 +562,9 @@ img {
 
 .features__list {
   padding: 0;
+  margin: 0;
+}
+.features__list :last-child {
   margin: 0;
 }
 @media screen and (min-width: 768px) {
@@ -768,6 +778,10 @@ img {
   }
 }
 
+.team__header {
+  margin-bottom: 30px;
+}
+
 .team__list {
   margin: 0;
   padding: 0;
@@ -973,6 +987,7 @@ img {
   .socials__group {
     margin-right: 74px;
     text-align: center;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1013,12 +1028,6 @@ img {
   color: var(--hover-cl);
 }
 
-@media screen and (min-width: 1200px) {
-  .sub-form {
-    margin-left: auto;
-    text-align: center;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .sub-form {
     display: -webkit-box;
@@ -1031,6 +1040,12 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sub-form {
+    margin-left: auto;
+    text-align: left;
   }
 }
 
@@ -1351,8 +1366,8 @@ img {
 }
 
 .checkbox__text {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary-font-cl);
 }
@@ -1431,6 +1446,10 @@ img {
 
 .request-form__field:nth-child(-n+3) {
   margin-bottom: 10px;
+}
+
+.request-form__field:nth-child(4) {
+  margin-bottom: 20px;
 }
 
 .request-form__input {

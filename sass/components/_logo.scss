@@ -1,42 +1,36 @@
 .logo {
-    display: flex;
-    align-items: center;
-    margin-right: 93px;
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    color: var(--hover-cl);
+  display: flex;
+  align-items: center;
+  margin-right: 93px;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--hover-cl);
 
-    
-        
-        
-        
-    
-
-
-    &--black {
+  &--black {
     color: var(--logo-black);
-        }
+  }
 
-    &--white {
+  &--white {
     color: var(--bg-cl);
-    }
+  }
 }
 
-.logo--mrb{
-    margin-bottom: 20px;
+.logo--mrb {
+  margin-bottom: 20px;
+  display: block;
 }
 
-.footer__logo{
-    text-decoration: none;
-    font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    color: var(--hover-cl);
+.footer__logo {
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--hover-cl);
 }

@@ -15,7 +15,7 @@
 
   cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 769px) {
     display: none;
   }
   &:hover,
@@ -110,6 +110,7 @@
 }
 
 .menu__tel-text {
+  font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
   color: var(--hover-cl);
