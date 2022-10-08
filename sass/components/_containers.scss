@@ -1,21 +1,31 @@
 .container {
-  width: 1200px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .footer__container {
+  
+    
+  @media screen and(min-width: 1200px) {
+    
+  
   display: flex;
-  flex-direction: row;
   align-items: baseline;
-  gap: 70px;
+    @media screen and (max-width:767px) {
+        text-align: center;
+      }
+}
 }
 
 .portfolio__container {

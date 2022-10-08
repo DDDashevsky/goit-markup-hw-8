@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  width: 1600px;
   margin: 0 auto;
 
   padding-top: 200px;
@@ -16,7 +15,7 @@
 }
 
 .hero__header {
-  width: 696px;
+  max-width: 696px;
   margin: auto;
   margin-bottom: 30px;
 

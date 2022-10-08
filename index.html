@@ -17,15 +17,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body class="page">
     <header class="header">
       <div class="header__container container ">
+        
+        <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
         <nav class="header__navigation navigation">
-          <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span></a>
           <ul class="header__navigation__list list">
             <li class="header__navigaion__item navigaion__item ">
               <a class="header__navigation__link  navigation__link header__navigation__link--current link" href="./index.html">Студія</a>
@@ -58,7 +59,52 @@
             >
           </li>
         </ul>
+        <!-- mobile menu -->
       </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu menu-cross">
+     <svg width="40" height="40">
+      <use href="./images/icons.svg#menu-cross"></use>
+     </svg>
+    </button>
+
+    <ul class="menu list">
+      <li><a href="" class="menu__item menu__item--nav menu__item--current link">Студія</a></li>
+      <li><a href="" class="menu__item menu__item--nav link">Портфоліо</a></li>
+      <li><a href="" class="menu__item menu__item--nav link">Контакти</a></li>
+    </ul>
+    <ul class="menu__contacts list">
+      <li><a href="tel:+380961111111" class="menu__item menu__item--tel link"></a><span class="menu__tel-text">+38 096 111 11 11</span> </li>
+      <li><a href="mailto:info@devstudio.com" class="menu__item menu__item--mail"><span class="menu__mail-text">info@devstudio.com</span></a> </li>
+    </ul>
+      <ul class="menu__socials list">
+        <li><a class="menu__item menu__item--socials link" href="https://www.instagram.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Instagram"
+                    >Instagram</a></li>
+        <li><a class="menu__item menu__item--socials link" href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Twitter"
+                    >Twitter</a></li>
+        <li><a class="menu__item menu__item--socials link"  href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Facebook"
+                    >Facebook</a></li>
+        <li><a class="menu__item menu__item--socials-none link" href="https://www.linkedin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="LinkedIn"
+                    >LinkedIn</a></li>
+      </ul>
+  </div>
+      <button type="button" class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#burger"></use>
+        </svg>
+      </button>
     </header>
 
     <main class="main">
@@ -70,6 +116,7 @@
           </button>
         </div>
       </section>
+
       <section class="features section">
         <div class="features__container container">
           <h2 class="visually-hidden">Наші особливості</h2>
@@ -81,30 +128,31 @@
                 </svg>
               </div>
               <h3 class="features__header feature-header">Увага до деталей</h3>
-              <p class="features__caption  feature">
+              <p class="features__caption feature">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-             <li class="features__item">
+            <li class="features__item">
               <div class="features__card">
                 <svg class="features__icon" width="70" height="70">
                   <use href=".//images/icons.svg#clock"></use>
                 </svg>
               </div>
               <h3 class="features__header">Пунктуальність</h3>
-              <p class="features__caption ">
-                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+              <p class="features__caption">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
               </p>
             </li>
-             <li class="features__item">
+            <li class="features__item">
               <div class="features__card feature-icon-cont">
                 <svg class="features__icon feature-icon" width="70" height="70">
                   <use href=".//images/icons.svg#diagram"></use>
                 </svg>
               </div>
               <h3 class="features__header">Планування</h3>
-              <p class="features__caption ">
+              <p class="features__caption">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
@@ -116,13 +164,16 @@
               </div>
               <h3 class="features__header">Сучасні технології</h3>
               <p class="features__caption">
-               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
               </p>
             </li>
           </ul>
         </div>
       </section>
+
       <!-- bem changes -->
+
       <section class="section spec">
         <div class="spec__container container">
           <h2 class="spec__section-header section-header">Чим ми займаємося</h2>
@@ -167,7 +218,9 @@
           </ul>
         </div>
       </section>
+
       <!-- bem changes -->
+
       <section class="team section">
         <div class="team__container container team-cont">
           <h2 class="team__header section-header">Наша команда</h2>
@@ -443,6 +496,7 @@
           </ul>
         </div>
       </section >
+
       <section class="clients section" >
           <div class="clients__container container">
           <h2 class="clients__header client-header section-header">Постійні клієнти</h2>
@@ -501,99 +555,126 @@
 
     <footer class="footer">
       <div class="footer__container container">
-        <div>
-        <a href="./index.html" class="logo logo--mrb">Web<span class="logo--white ">Studio</span></a>
-        <address class="address">
-          <ul class="adress__list list">
-            <li class="adress__item">
-              <a
-                href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="adress__link adress__link--white"
-                >м. Київ, пр-т Лесі Українки,26</a
-              >
-            </li>
-            <li class="adress__item">
-              <a href="mailto:info@devstudio.com" class="adress__link"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="adress__item">
-              <a href="tel:+380961111111" class="adress__link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+        <div class="footer__group">
+          <div class="footer__group--minor">
+            <a href="./index.html" class="footer__logo logo--mrb"
+              >Web<span class="logo--white">Studio</span></a
+            >
+            <address class="address">
+              <ul class="adress__list list">
+                <li class="adress__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="adress__link adress__link--white"
+                    >м. Київ, пр-т Лесі Українки,26</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a href="mailto:info@devstudio.com" class="adress__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a href="tel:+380961111111" class="adress__link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="socials__group">
+            <h3 class="socials__header">Приєднуйтесь</h3>
+            <ul class="socials footer__socials list">
+              <li class="socials__item">
+                <a
+                  class="socials__link socials__link--greybg link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item bot-social-item">
+                <a
+                  class="socials__link socials__link--greybg link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item bot-social-item">
+                <a
+                  class="socials__link socials__link--greybg link"
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item bot-social-item">
+                <a
+                  class="socials__link socials__link--greybg link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
+                >
+                  <svg
+                    class="socials__icon socials__icon--white"
+                    width="20"
+                    height="20"
+                  >
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h3 class="socials__header">Приєднуйтесь</h3>
-           <ul class="socials footer__socials list">
-                  <li class="socials__item">
-                    <a
-                      class="socials__link socials__link--greybg link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Instagram"
-                    >
-                      <svg class="socials__icon socials__icon--white" width="20" height="20">
-                        <use href="./images/icons.svg#instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item bot-social-item">
-                    <a
-                      class="socials__link socials__link--greybg link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Twitter"
-                    >
-                      <svg class="socials__icon socials__icon--white" width="20" height="20">
-                        <use href="./images/icons.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item bot-social-item">
-                    <a
-                       class="socials__link socials__link--greybg link"
-                      href="https://facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="Facebook"
-                    >
-                      <svg class="socials__icon socials__icon--white" width="20" height="20">
-                        <use href="./images/icons.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-item bot-social-item">
-                    <a
-                      class="socials__link socials__link--greybg link"
-                      href="https://www.linkedin.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label="LinkedIn"
-                    >
-                      <svg class="socials__icon socials__icon--white" width="20" height="20">
-                        <use href="./images/icons.svg#linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-                </div>
-      
-      <form class="sub-form">
-        <strong class="sub-form__title">Підпишіться на розсилку</strong>
-        <label class="sub-form__field">
-            <input class="sub-form__input footer-form-input" type="text" name="subscription" placeholder="E-mail" required>
+
+        <form class="sub-form">
+          <strong class="sub-form__title">Підпишіться на розсилку</strong>
+          <label class="sub-form__field">
+            <input
+              class="sub-form__input footer-form-input"
+              type="text"
+              name="subscription"
+              placeholder="E-mail"
+              required
+            />
           </label>
           <button class="sub-form__btn" type="submit">Підписатися</button>
-      </form>
+        </form>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="cross-btn" type="button" data-modal-close>
@@ -658,20 +739,36 @@
             </label>
           </div>
           <label class="checkbox">
-            <input class="checkbox__input" type="checkbox"  name="policy-check"/>
-            <svg class="checkbox__icon " width="16" height="15">
+            <input
+              class="checkbox__input"
+              type="checkbox"
+              name="policy-check"
+            />
+            <svg class="checkbox__icon" width="16" height="15">
               <use class="icon-checked" href="./images/icons.svg#checked"></use>
-              <use class="icon-unchecked" href="./images/icons.svg#unchecked"></use>
+              <use
+                class="icon-unchecked"
+                href="./images/icons.svg#unchecked"
+              ></use>
             </svg>
             <span class="checkbox__text checkbox-text">
               Погоджуюся з розсилкою та приймаю
-              <a class="checkbox__link policy-link" href="">Умови договору</a></span
+              <a class="checkbox__link policy-link" href=""
+                >Умови договору</a
+              ></span
             >
           </label>
           <button class="submit-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
-      <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
+      <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
