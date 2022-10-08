@@ -1,31 +1,35 @@
 .spec {
-    padding: 0 0 94px 0;
-    margin: 0;
+  padding: 0 0 94px 0;
+  margin: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .spec__list {
-    display: flex;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .spec__overlay {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    bottom: 0;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  bottom: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 70px;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--bg-cl);
-    background-color: rgba(47, 48, 58, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-cl);
+  background-color: rgba(47, 48, 58, 0.8);
 }
