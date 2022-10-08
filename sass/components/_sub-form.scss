@@ -1,12 +1,10 @@
-.sub-form{
-
-
-  @media screen and (min-width:1200px) {
+.sub-form {
+  @media screen and (min-width: 1200px) {
     margin-left: auto;
     text-align: center;
   }
 
-  @media screen and (min-width:768px) and (max-width:1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -21,14 +19,14 @@
   text-transform: uppercase;
   color: var(--bg-cl);
 
-  @media screen and (max-width:1199px){
+  @media screen and (max-width: 1199px) {
     text-align: center;
   }
 }
 
-.sub-form__field{
+.sub-form__field {
   text-align: center;
-  @media screen and (max-width:1199px) {
+  @media screen and (max-width: 1199px) {
     display: block;
   }
 }
@@ -43,27 +41,30 @@
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  
-  @media screen and (min-width:1200px){
+
+  @media screen and (max-width: 481px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
   }
 
-  @media screen and (max-width:1199px){
-    margin-bottom: 20px;;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
   }
 
-
-&:focus {
-  border-color: var(--button-hover);
-}
+  &:focus {
+    border-color: var(--button-hover);
+  }
 }
 
 .sub-form__btn {
   display: inline-flex;
   align-items: center;
   padding: 10px 28px;
-  background-color: var(--hover-cl);
+  // background-color: var(--hover-cl);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   border-radius: 4px;
   border: none;
@@ -75,18 +76,17 @@
   color: var(--bg-cl);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  
+  &:hover,
+  &:focus {
+    background-color: var(--hover-cl);
+  }
 
-&:hover,
-&:focus {
-}
-
-&::after {
-  content: "";
-  display: inline-block;
-  margin-left: 10px;
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/icon-send.svg);
-}
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon-send.svg);
+  }
 }
