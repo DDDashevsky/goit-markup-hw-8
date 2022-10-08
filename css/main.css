@@ -246,11 +246,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 8px;
   color: var(--secondary-font-cl);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-font-cl);
@@ -263,8 +263,13 @@ img {
 .header__contacts__link:hover .contacts__icon, .header__contacts__link:hover .contacts__icon {
   fill: var(--hover-cl);
 }
-
-.contacts__icon {
+@media screen and (min-width: 1200px) {
+  .header__contacts__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
+.header__contacts__link .contacts__icon {
   fill: var(--secondary-font-cl);
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
