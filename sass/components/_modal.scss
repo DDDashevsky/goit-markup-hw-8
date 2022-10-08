@@ -82,14 +82,16 @@
     padding: 12px 16px;
   }
 
-  &:hover,
-  &:focus {
-    border-color: var(--hover-cl);
+  &:hover ~ .request-form__icon,
+  &:focus ~ .request-form__icon,
+  &:active ~ .request-form__icon {
+    fill: var(--hover-cl);
   }
 
-  &:hover ~ .form-icon,
-  &:focus ~ .form-icon {
-    fill: var(--hover-cl);
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: var(--hover-cl);
   }
 }
 .request-form-group {

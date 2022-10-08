@@ -14,7 +14,7 @@
 .header__navigation {
   display: flex;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -24,7 +24,6 @@
 
   gap: 50px;
   margin: 0;
-  margin-right: 90px;
   padding: 0;
 }
 
@@ -62,25 +61,30 @@
   &:focus {
     color: var(--hover-cl);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
 
 .mail {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 }
 .header__contacts {
   padding: 0;
   margin: 0;
+  margin-left: auto;
 
   @media screen and (min-width: 1200px) {
     display: flex;
     gap: 30px;
     align-items: center;
-    margin-left: auto;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -89,7 +93,6 @@
   display: flex;
   align-items: center;
   gap: 10px;
-
   color: var(--secondary-font-cl);
   font-weight: 500;
   font-size: 14px;

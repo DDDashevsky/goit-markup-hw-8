@@ -1,13 +1,13 @@
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 93px;
+  margin-right: 88px;
   text-decoration: none;
   font-family: var(--secondary-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: var(--hover-cl);
 
@@ -17,6 +17,11 @@
 
   &--white {
     color: var(--bg-cl);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
   }
 }
 
@@ -29,8 +34,13 @@
   text-decoration: none;
   font-family: var(--secondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: var(--hover-cl);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+  }
 }
